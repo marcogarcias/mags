@@ -1,0 +1,86 @@
+{% extends 'vue/layout.twig' %}
+
+{% block content %}
+{% if example==1 %}
+<article>
+  <section class="row">
+    <h2>Ejemplo: {{ example }}</h2>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-mlg-12">
+      <div id="main">
+      	<ul>
+          <!-- Otra forma es: -->
+          <!-- <li v-for="itm in people" v-text="itm"> -->
+          <li v-for="itm in people">${ itm }</li> 
+        </ul>
+        <input type="text" v-model="name" v-on:keyup.enter="addName">
+      </div>
+    </div>
+  </section>
+</article>
+
+<script type="text/javascript">
+new Vue({
+  delimiters: ['${', '}'],
+  el: '#main',
+  data: {
+    people: ['Perro', 'Gato', 'Ratón', 'Lemur']
+  },
+  name: '',
+  methods: {
+    addName: function(){
+      this.people.push(this.name);
+      this.name = '';
+    }
+  }
+});
+</script>
+{# ######################################################### #}
+{# EJEMPLO NUMERO DOS: #}
+{# https://www.youtube.com/watch?v=rKgc4g3lPHc&list=PLhCiuvlix-rRfn75tEQHzsYaijqSpW_vt&index=3 #}
+{# ######################################################### #}
+{% elseif example==2 %}
+<article>
+  <section class="row">
+    <h2>Ejemplo: {{ example }}</h2>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-mlg-12">
+      <div id="main">
+        <input type="text" v-model="info">
+        <p v-bind:title="info">${info}</p>
+      </div>
+    </div>
+  </section>
+</article>
+
+<script type="text/javascript">
+new Vue({
+  delimiters: ['${', '}'],
+  el: '#main',
+  data: {
+    info: ''
+  }
+});
+</script>
+{# ######################################################### #}
+{# EJEMPLO NUMERO TRES: #}
+{# https://www.youtube.com/watch?v=yqnT2VzJHHI&index=4&list=PLhCiuvlix-rRfn75tEQHzsYaijqSpW_vt #}
+{# ######################################################### #}
+{% elseif example==3 %}
+<article>
+  <section class="row">
+    <h2>Ejemplo: {{ example }}</h2>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-mlg-12">
+      <div id="main">
+        
+      </div>
+    </div>
+  </section>
+</article>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
+<script type="text/javascript">
+
+</script>
+{% else %}
+  <h1>Ejemplo inexistente</h1>
+{% endif %}
+
+{% endblock %}

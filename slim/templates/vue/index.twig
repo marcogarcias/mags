@@ -1,0 +1,76 @@
+{% extends 'mitology/layout.twig' %}
+
+{% block content %}
+<article>
+  <section class="row intro" data-type="background" data-speed="12">
+    <h2 class="title">Bienvenido a un mundo mitológico</h2>
+    <div class="col-xs-11 col-sm-11 col-md-5 col-mlg-5 box1">
+      Desde tiempos inmemoriables, el ser humano ha querido darle explicación 
+      a todo lo que va más allá de su entendimiento dando como resultado la 
+      invención de leyendas, mitos y relatos fantásticos.
+      <hr />
+    </div>
+    <div class="col-xs-11 col-sm-11 col-md-5 col-mlg-5 box1">
+      Las diversas civilizaciones del mundo antiguo crearon todo un mundo 
+      mágico lleno de dioses, héroes y seres fantásticos para dar explicación a 
+      muchos de los fenómenos naturales que los rodeaban.
+      <hr />
+    </div>
+    <div class="col-xs-11 col-sm-11 col-md-5 col-mlg-5 box1">
+      Aquí reuno algunos seres fantásticos de tres grandes civilizaciones 
+      como son: la mitología egipcia, romana y nórdica.
+      <hr />
+    </div>
+  </section>
+
+  <section class="row cont-boxes" data-type="background" data-speed="12">
+    <h2 class="title">Estos son algunos seres mitológicos</h2>
+    <div id="boxes">
+      
+    </div>
+    <div id="main">
+    <ul>
+      <li v-for="itm in lists.book">
+        ${ itm.description }
+      </li>
+    </ul>
+  </div>
+  </section>
+</article>
+<script>
+
+$(document).ready(function(){
+  mitology.onLoadBooks(null, function(book){
+    this.book = utils.arrayShuffle(book);
+    mitology.addBoxesHtml(this.book);
+  });
+});
+
+var url = "/json/mitology/greek.json";
+new Vue({
+  delimiters: ['${', '}'],
+  el: '#main',
+  created: function(){
+    this.getUsers();
+  },
+  data: {
+    lists: []
+  },
+  methods: {
+    getUsers: function(){
+      axios.get(url).then(resp => {
+        this.lists = resp.data
+      });
+    }
+  }
+});
+/*
+new Vue({
+      el: '#main',
+      data: {
+        people: ['Maria', 'Isabella', 'Fernanda', 'Rosa', 'Elizabeth']
+      }
+    });
+*/
+</script>
+{% endblock %}

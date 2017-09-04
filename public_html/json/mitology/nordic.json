@@ -1,0 +1,37 @@
+{
+  "title":"Mitología Nórdica",
+  "review":"aquí una reseña",
+  "type":"nordic",
+  "book": {
+    "Loki":{
+      "description": "Dios del fuego destructor, que personificaba el principio del mal, en oposición a Heimdal. Dios del fuego destructor, que personificaba el principio del mal, en oposición a Heimdal.",
+      "image":"loki-1.jpg",
+      "type":"nordic"
+    },
+    "Odín":{
+      "description": "Divinidad suprema, fuente de todo bien y padre de todos los dioses. Era la deidad de la guerra, las ciencias y las artes. Según los pueblos que le rendían culto, se le llamaba también Wodan, Wodin y Wotan.",
+      "image":"odin-1.png",
+      "type":"nordic"
+    },
+    "Thor":{
+      "description": "Dios del rayo y del trueno, y una de las divinidades principales de la mitología nórdica. Lo llamaban también Donar. Dios del rayo y del trueno, y una de las divinidades principales de la mitología nórdica. Lo llamaban también Donar.",
+      "image":"thor-1.jpg",
+      "type":"nordic"
+    },
+    "Valquirias":{
+      "description": "Divinidades inferiores que decidían la suerte de los combates, elegían los guerreros que habían de sucumbir y los recibían después en el Valhala, donde les servían el alimento y la bebida.",
+      "image":"valquirias-1.jpg",
+      "type":"nordic"
+    },
+    "Freya":{
+      "description": "Diosa del amor y de la belleza, hermana de Freyr. En un principio se la veneraba como distribuidora de las lluvias veraniegas. Diosa del amor y de la belleza, hermana de Freyr. En un principio se la veneraba como distribuidora de las lluvias veraniegas.",
+      "image":"freya-1.png",
+      "type":"nordic"
+    },
+    "Midgard":{
+      "description": "Morada de los hombres, representada por un disco rodeado por un mar muy profundo y defendido de los ataques de los gigantes por una elevada muralla. Morada de los hombres, representada por un disco rodeado por un mar muy profundo y defendido de los ataques de los gigantes por una elevada muralla.",
+      "image":"midgard-1.jpg",
+      "type":"nordic"
+    }
+  }
+}

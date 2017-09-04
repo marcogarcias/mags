@@ -1,0 +1,241 @@
+@headF1:#fff;
+@headF2:#ddd;
+@col-greek:#079B00;
+@col-egyptian:#883D00;
+@col-nordic:#00038F;
+
+body{
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  // border: 1px solid #000;
+  //background-attachment: fixed;
+  //background-size: 1300px 990px;
+  //background-repeat: no-repeat;
+  color: @headF2;
+  font-family: 'Montserrat', sans-serif;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  hr{ display: inline-block; width: 40%; }
+  &>div{
+    //background: rgba(0, 0, 0, 0.5);
+    font-family: 'Lobster Two', cursive;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.bg-img{
+  .bg-img-mitology();
+}
+
+.bg-img-greek{
+  .bg-img-mitology('greek/pegaso-1.jpg');
+}
+
+.bg-img-egyptian{
+  .bg-img-mitology('egyptian/anubis-1.jpg');
+}
+
+.bg-img-nordic{
+  .bg-img-mitology('nordic/midgard-1.jpg');
+}
+
+.menu01{
+  ul{
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    li>a{
+      border-bottom: 5px solid rgba(0, 0, 0, 0);
+      color: @headF2;
+      display: inline-block;
+      padding: 20px;
+    }
+    li>a:hover{
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 5px solid #5BA3FF;
+      color: @headF1;
+      text-decoration: none;
+    }
+  }
+  .nav-pills>li{
+    float: none;
+    display: inline-block;
+  }
+  .nav>li>a:hover,.nav>li>a:focus{
+    background: #000;
+  }
+  .nav-pills > li > a {
+    border-radius: 0;
+  }
+
+  .dropdown-menu{
+    border-radius: 0;
+    padding: 0px;
+    &>li>a{
+      display: block;
+    }
+  }
+
+  .nav .open > a, 
+  .nav .open > a:hover, 
+  .nav .open > a:focus {
+    background: #000;
+  }
+
+  .active{ border-bottom: 5px solid #5BA3FF; }
+}
+
+.header-text{
+  letter-spacing: 5px;
+  text-shadow: 8px 8px 5px #000;
+  padding: 60px;
+  h1{
+    font-size: 50px;
+  }
+  h4{
+    font-size: 30px;
+  }
+}
+
+.row{
+  margin: 0;
+}
+
+.intro{
+  background: url('../../images/mitology/bg-sea-01.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  .title{
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.box1{
+  background: rgba(255, 255, 255, 0.4);
+  border-left: 10px solid #0C4E6D;
+  box-shadow: 10px 10px 10px #000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 10px 20px;
+  padding: 30px;
+  text-indent: 10px;
+  &:first-letter {
+    .firstLetter;
+  }
+}
+
+.cont-boxes{
+  background: #ddd;
+  .box{
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 0px;
+    .layer-alpha{
+      background-color: rgba(0, 0, 0, 0);
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+    }
+    h3{
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    a, a:focus, a:hover{ text-decoration: none; }
+    p{
+      padding: 20px;
+      text-indent: 10px;
+      color: rgba(200, 200, 200, 0);
+      text-align: justify;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      &:first-letter{
+        .firstLetter;
+      }
+    }
+    div.box-footer{
+      background: rgba(0, 0, 0, 0.7);
+      color: #999;
+      font-size: 12px;
+      margin: 0;
+      margin-top: 10px;
+      padding: 5px;
+    }
+  }
+  .box:hover{
+    .layer-alpha{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    p{
+      color: rgba(200, 200, 200, 1);
+      text-decoration: none;
+    }
+  }
+}
+
+.box-greek{
+  .box-mitology(@col-greek);
+}
+
+.box-egyptian{
+  .box-mitology(@col-egyptian);
+}
+
+.box-nordic{
+  .box-mitology(@col-nordic);
+}
+
+footer{
+  background: #000;
+  color: #660;
+  padding: 40px;
+}
+
+@media (max-width: 767px) {
+  .cont-boxes .box{
+    p{
+      font-size: 2rem;
+      padding: 70px 40px 70px 40px;
+    }
+  }
+}
+
+/*******************
+ ***** MIXINS ******
+ ******************/
+
+.firstLetter(@sz: 30px){
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  font-size: @sz;
+}
+
+.box-mitology(@color, @opacity:0.6){
+  h3{
+    background: fade(@color, @opacity);
+    color: lighten(@color, 60%);
+  }
+}
+
+.bg-img-mitology(@img:'mitologia-01.jpg'){
+  background-image: url('../../images/mitology/@{img}');
+  background-size: cover;
+  &>div{ background: rgba(0, 0, 0, 0.5); }
+}

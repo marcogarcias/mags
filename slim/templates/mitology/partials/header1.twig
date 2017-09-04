@@ -1,0 +1,22 @@
+{% set bgImg = 'bg-img'~((type|length>0) ? '-'~type : '') %}
+<header class="{{ bgImg }}" data-type="background" data-speed="4">
+  <div>
+    <nav class="menu01"><ul class="nav nav-pills" style="border: 0px solid #f00; text-align: right;">
+      <li style="border: 0px solid #0f0;"><a href="#">Inicio</a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mitologías</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">M. Griega</a></li>
+          <li><a href="#">M. Egipcia</a></li>
+          <li><a href="#">M. Nórdica</a></li>
+        </ul>
+      </li>
+      <li><a href="#">¿Quién soy?</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul></nav>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right text-rigth header-text">
+      <h1>Mitology {{ mitology }}</h1>
+      <hr />
+      <h4>Seres fantásticos</h4>
+    </div>
+  </div>
+</header>

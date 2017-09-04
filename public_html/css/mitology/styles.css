@@ -1,0 +1,218 @@
+body {
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: #dddddd;
+  font-family: 'Montserrat', sans-serif;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+header hr {
+  display: inline-block;
+  width: 40%;
+}
+header > div {
+  font-family: 'Lobster Two', cursive;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.bg-img {
+  background-image: url('../../images/mitology/mitologia-01.jpg');
+  background-size: cover;
+}
+.bg-img > div {
+  background: rgba(0, 0, 0, 0.5);
+}
+.bg-img-greek {
+  background-image: url('../../images/mitology/greek/pegaso-1.jpg');
+  background-size: cover;
+}
+.bg-img-greek > div {
+  background: rgba(0, 0, 0, 0.5);
+}
+.bg-img-egyptian {
+  background-image: url('../../images/mitology/egyptian/anubis-1.jpg');
+  background-size: cover;
+}
+.bg-img-egyptian > div {
+  background: rgba(0, 0, 0, 0.5);
+}
+.bg-img-nordic {
+  background-image: url('../../images/mitology/nordic/midgard-1.jpg');
+  background-size: cover;
+}
+.bg-img-nordic > div {
+  background: rgba(0, 0, 0, 0.5);
+}
+.menu01 ul {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.menu01 ul li > a {
+  border-bottom: 5px solid transparent;
+  color: #dddddd;
+  display: inline-block;
+  padding: 20px;
+}
+.menu01 ul li > a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid #5ba3ff;
+  color: white;
+  text-decoration: none;
+}
+.menu01 .nav-pills > li {
+  float: none;
+  display: inline-block;
+}
+.menu01 .nav > li > a:hover,
+.menu01 .nav > li > a:focus {
+  background: black;
+}
+.menu01 .nav-pills > li > a {
+  border-radius: 0;
+}
+.menu01 .dropdown-menu {
+  border-radius: 0;
+  padding: 0px;
+}
+.menu01 .dropdown-menu > li > a {
+  display: block;
+}
+.menu01 .nav .open > a,
+.menu01 .nav .open > a:hover,
+.menu01 .nav .open > a:focus {
+  background: black;
+}
+.menu01 .active {
+  border-bottom: 5px solid #5ba3ff;
+}
+.header-text {
+  letter-spacing: 5px;
+  text-shadow: 8px 8px 5px black;
+  padding: 60px;
+}
+.header-text h1 {
+  font-size: 50px;
+}
+.header-text h4 {
+  font-size: 30px;
+}
+.row {
+  margin: 0;
+}
+.intro {
+  background: url('../../images/mitology/bg-sea-01.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.intro .title {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.box1 {
+  background: rgba(255, 255, 255, 0.4);
+  border-left: 10px solid #0c4e6d;
+  box-shadow: 10px 10px 10px black;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 10px 20px;
+  padding: 30px;
+  text-indent: 10px;
+}
+.box1:first-letter {
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+.cont-boxes {
+  background: #dddddd;
+}
+.cont-boxes .box {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 0px;
+}
+.cont-boxes .box .layer-alpha {
+  background-color: transparent;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.cont-boxes .box h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.cont-boxes .box a,
+.cont-boxes .box a:focus,
+.cont-boxes .box a:hover {
+  text-decoration: none;
+}
+.cont-boxes .box p {
+  padding: 20px;
+  text-indent: 10px;
+  color: rgba(200, 200, 200, 0);
+  text-align: justify;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.cont-boxes .box p:first-letter {
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+.cont-boxes .box div.box-footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: #999999;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px;
+}
+.cont-boxes .box:hover .layer-alpha {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.cont-boxes .box:hover p {
+  color: #c8c8c8;
+  text-decoration: none;
+}
+.box-greek h3 {
+  background: rgba(7, 155, 0, 0.6);
+  color: #d0ffce;
+}
+.box-egyptian h3 {
+  background: rgba(136, 61, 0, 0.6);
+  color: #ffdabb;
+}
+.box-nordic h3 {
+  background: rgba(0, 3, 143, 0.6);
+  color: #c2c3ff;
+}
+footer {
+  background: black;
+  color: #666600;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .cont-boxes .box p {
+    font-size: 2rem;
+    padding: 70px 40px 70px 40px;
+  }
+}
+/*******************
+ ***** MIXINS ******
+ ******************/

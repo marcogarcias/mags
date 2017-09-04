@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  {# Google fonts:Indie Flower  #}
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="{{ base_url() }}/libs/bootstrap-3.3/css/bootstrap.css">
+  <link rel="stylesheet" href="{{ base_url() }}/css/mitology/styles.css">
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
+  <script src="{{ base_url() }}/libs/jquery-3.1/jquery-3.1.1.min.js"></script>
+  <script src="{{ base_url() }}/libs/bootstrap-3.3/js/bootstrap.js"></script>
+  <script src="{{ base_url() }}/js/utils.js"></script>
+  <script src="{{ base_url() }}/js/mitology/mitology.js"></script>
+</head>
+<body>
+<div class="container">
+  {% include 'mitology/partials/header1.twig' %}
+  {% block content %} {% endblock %}
+  {% include 'mitology/partials/footer1.twig' %}
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "title":"Mitología Egipcia",
+  "review":"aquí una reseña",
+  "type":"egyptian",
+  "book": {
+    "Anubis":{
+      "description": "Es el dios egipcio de los muertos. Su papel principal era velar por la momificación, el embalsamiento y por el acompañamiento de los muertos hacia el reino eterno. Es él quien lleva el difunto a la habitación de \"Las Ambas Verdades\", en el \"Juicio de los muertos\" con el fin de que sufra la prueba de la balanza. Además, Anubis es el presidente de esta ceremonia.",
+      "image":"anubis-1.jpg",
+      "type":"egyptian"
+    },
+    "Ra":{
+      "description": "El dios egipcio del sol cuyo principal lugar de culto fue Héliopolis. Le consideraban los egipcios como el dios creador del universo, el dios del Estado y de la justicia. Se creía que durante el día recorría el cielo sobre la Mândjet.",
+      "image":"ra-1.jpg",
+      "type":"egyptian"
+    },
+    "Horus":{
+      "description": "Horus es venerado en todo el territorio egipcio. Es una de las divinidades superiores y ciertamente una de las más antiguas. Es el dios del cielo, puede ver a través del sol y de la luna. Podemos encontrarlo bajo dos formas: la de un niño que chupa su pulgar o bajo un dios poderoso con forme de halcón. Junto a Osiris e Isis, forman \"la trinidad egipcia\".",
+      "image":"horus-1.jpg",
+      "type":"egyptian"
+    },
+    "Hathor":{
+      "description": "Diosa de la alegria, las fiestas, a embriaguez, la danza, la musica y el amor. Su nombre significa \"morada de Horus\" porque en su origen era una entidad celeste.",
+      "image":"hathor-1.jpg",
+      "type":"egyptian"
+    },
+    "Osiris":{
+      "description": "Es un dios muerto, esposo de Isis, su hermana. El mito dice que Seth lo descuartizo y lo esparció por Egipto. Es la divinidad de la fertilidad y la vegetación en desarrollo a la vez de ser el dios de los muertos.",
+      "image":"osiris-1.jpg",
+      "type":"egyptian"
+    },
+    "Isis":{
+      "description": "Hija de Geb y de Nut y esposa de su hermano Osiris al qual descuartizan y ella busca los trozos por Egipto. Diosa Madre, de la maternidad y del nacimiento. Se la considera la gran maga.",
+      "image":"isis-1.jpg",
+      "type":"egyptian"
+    }
+  }
+}

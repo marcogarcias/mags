@@ -1,0 +1,37 @@
+{
+  "title":"Mitología Griega",
+  "review":"aquí una reseña",
+  "type":"greek",
+  "book": {
+    "Pegaso":{
+      "description": "Un pegaso es un corcel alado de naturaleza mágica, inteligente, bondadoso y salvaje.\nSe trata de una criatura muy tímida que sólo puede ser domada por jinetes de buen corazón. Los pegasos detectan el mal innatamente y no servirán a quien intente domarlos con fines malvados.",
+      "image":"pegaso-1.jpg",
+      "type":"greek"
+    },
+    "Mantícora":{
+      "description": "La mantícora es un ser monstruoso con cuerpo de león, alas de murciélago y cabeza humana. La mantícora es un ser monstruoso con cuerpo de león, alas de murciélago y cabeza humana.",
+      "image":"manticora-1-brittMartin.jpg",
+      "type":"greek"
+    },
+    "Quimera":{
+      "description": "La quimera es un ser monstruoso de origen oscuro, híbrido entre un león, un macho cabrío y un dragón. La quimera puede comunicarse en el lenguaje mágico de los dragones, aunque no se para a hablar con criaturas a las que considera inferiores.",
+      "image":"quimera-1.jpg",
+      "type":"greek"
+    },
+    "Arpía":{
+      "description": "Una arpía es un desagradable y horrible ser, en parte mujer y en parte buitre.\n La parte inferior de su cuerpo y las alas son de buitre, y el torso y la cara de mujer, en concreto de una bruja. Su pelo es grueso, duro y enmarañado, como un estropajo, y tiene los dientes podridos. No suelen llevar ropas y siempre están envueltas en un fétido olor. Son seres tan sucios que infectan a otros seres al atacarles con sus garras.",
+      "image":"arpia-1.jpg",
+      "type":"greek"
+    },
+    "Gorgonas":{
+      "description": "Una gorgona es una mujer guerrera con alas y mirada petrificante.\nSe piensa que las gorgonas eran parte de una raza de mujeres guerreras, aunque sólo se conocen tres; Medusa, Esteno y Euríale. Estas hermanas, hijas de las deidades marinas Ceto y Forcis, formaban una de las tríadas más poderosas y antiguas de la mitología conocida. Contaban con poderes mentales, físicos y tenían el don de la curación.",
+      "image":"gorgonas-1.jpg",
+      "type":"greek"
+    },
+    "Fénix":{
+      "description": "El Ave Fenix es un enorme pájaro envuelto en llamas y de plumaje rojo anaranjado, como el fuego.\nSe cree que fue el único animal del Edén que resistió la tentación, y esto lo convirtió en un ser eterno.",
+      "image":"fenix-1.jpg",
+      "type":"greek"
+    }
+  }
+}
